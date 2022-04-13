@@ -3,10 +3,14 @@ package jp.techacademy.yuki.kotlinlog
 import android.util.Log
 
 open class Human : Animal, Thinkable {
+    var hobby: String
 
     // 引数付きコンストラクタ
-    constructor(name: String, age: Int, hobby: String) : super(name, age, hobby) {
+    constructor(name: String, age: Int, hobby: String) : super(name, age) {
+        this.hobby = hobby
     }
+
+
 
     override fun say() {
         Log.d("Kotlintest", "私の名前は" + this.name +"です。年は" + this.age + "歳です")
