@@ -11,10 +11,13 @@ class MainActivity : AppCompatActivity() {
 
 
         val human = Human("ウィル・スミス", 53, "アカデミー賞")
-        //Humanのインスタンスを作る
-
         human.say()
         human.think()
+        //Humanのインスタンスを作成
+        val human2 = Human("植本", 24, "猫ちゃん")
+        //Human2のインスタンスを作成
+        human2.say()
+        human2.think()
 
 
     }
